@@ -1,14 +1,19 @@
 import "./App.css";
 import NavBar from "./Components/NavBar";
-import Restaurants from "./Components/Restaurants";
 
-function App() {
+import React from "react";
+import RestaurantsList from "./Components/RestaurantsList"; // adjust the path based on your project structure
+import restaurants from "./assets/restaurant";
+
+const App = () => {
+  // Your restaurants data
+
   return (
     <div>
       <NavBar />
-      <Restaurants />
+      <RestaurantsList restaurants={restaurants} />
     </div>
   );
-}
+};
 
 export default App;
